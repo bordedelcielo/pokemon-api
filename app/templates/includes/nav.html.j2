@@ -11,13 +11,11 @@
 <title>Title</title>
 </head>
 <body>
-{% include './includes/nav.html.j2' %}
 
-<h1>Hello Universe 🌌</h1>
+<h1>Is my navbar working today?</h1>
 
-<h1>Hello world of Pokemon</h1>
-
-{% block content %} {% endblock content %}
+<a class="nav-link" aria-current="page" href="{{url_for('main.index')}}">Home</a>
+<a class="nav-link" aria-current="page" href="{{url_for('auth.login')}}">Login</a>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
